@@ -1,0 +1,138 @@
+/*-- Utilities --*/
+.js-enabled .nav-list {
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  -ms-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out; }
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html {
+  background: #fffefe; }
+
+body {
+  line-height: 1;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  color: #0f1017; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*-- Atoms --*/
+a {
+  color: #a65128; }
+  a:hover {
+    color: #bb5b2d; }
+  a:active, a:focus {
+    color: #914723; }
+  a:visited {
+    color: #7d3d1e; }
+
+.nav-list-link {
+  color: #fffefe;
+  display: block;
+  padding: .5em; }
+  .nav-list-link:hover, .nav-list-link:active, .nav-list-link:focus {
+    background: #206390;
+    color: #fffefe; }
+  .nav-list-link:visited {
+    color: #fffefe; }
+
+.nav-toggle {
+  background: #174666;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  text-align: center;
+  color: #fffefe; }
+
+.btn {
+  background: #a65128;
+  color: #fffefe;
+  padding: .5em;
+  display: inline-block;
+  vertical-align: middle;
+  text-decoration: none;
+  box-shadow: 0 0 1px #0f1017; }
+  .btn:hover {
+    background: #bb5b2d;
+    color: #fffefe; }
+  .btn:active, .btn:focus {
+    background: #914723;
+    color: #fffefe;
+    box-shadow: inset 0 0 3px #0f1017; }
+  .btn:visited {
+    color: #fffefe; }
+  .btn.-alt {
+    background: #174666; }
+    .btn.-alt:hover {
+      background: #1c547b; }
+    .btn.-alt:active, .btn.-alt:focus {
+      background: #123851; }
+
+/*-- Molecules --*/
+.nav-list {
+  display: block;
+  background: #174666;
+  z-index: 10000; }
+  .js-enabled .nav-list {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    right: 0; }
+    .js-enabled .nav-list.-open {
+      left: 25%; }
+    .js-enabled .nav-list.-no-animate {
+      -webkit-transition: none;
+      -moz-transition: none;
+      -o-transition: none;
+      -ms-transition: none;
+      transition: none; }
+  .nav-list .nav-toggle {
+    position: absolute;
+    left: -1em;
+    top: 0;
+    font-size: 3em; }
+
+/*-- Organisms --*/
+/*-- Templates --*/

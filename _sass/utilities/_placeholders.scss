@@ -1,0 +1,9 @@
+%useHeaderFont {
+	@include useHeaderFont;
+}
+%useBodyFont {
+	@include useHeaderFont;
+}
+%easeInOut {
+	@include easeInOut;
+}

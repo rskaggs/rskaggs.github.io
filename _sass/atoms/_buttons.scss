@@ -1,0 +1,30 @@
+.btn {
+	background: $actionColor;
+	color: $lightColor;
+	padding:.5em;
+	display: inline-block;
+	vertical-align: middle;
+	text-decoration: none;
+	box-shadow: 0 0 1px $darkColor;
+	&:hover {
+		background: lighten($actionColor, 5%);
+		color: $lightColor;
+	}
+	&:active, &:focus {
+		background: darken($actionColor, 5%);
+		color: $lightColor;
+		box-shadow: inset 0 0 3px $darkColor;
+	}
+	&:visited {
+		color: $lightColor;
+	}
+	&.-alt {
+		background: $primaryColor;
+		&:hover {
+			background: lighten($primaryColor, 5%);
+		}
+		&:active, &:focus {
+			background: darken($primaryColor, 5%);
+		}
+	}
+}

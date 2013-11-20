@@ -1,0 +1,32 @@
+a {
+	color: $actionColor;
+	&:hover {
+		color: lighten($actionColor, 5%);
+	}
+	&:active, &:focus {
+		color: darken($actionColor, 5%);
+	}
+	&:visited {
+		color: darken($actionColor, 10%);
+	}
+}
+.nav-list-link {
+	color: $lightColor;
+	display: block;
+	padding:.5em;
+	&:hover, &:active, &:focus {
+		background: lighten($primaryColor, 10%);
+		color: $lightColor;
+	}
+	&:visited {
+		color: $lightColor;
+	}
+}
+.nav-toggle {
+	background: $primaryColor;
+	width:1em;
+	height:1em;
+	line-height: 1em;
+	text-align: center;
+	color: $lightColor;
+}

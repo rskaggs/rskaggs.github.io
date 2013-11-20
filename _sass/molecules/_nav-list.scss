@@ -1,0 +1,24 @@
+.nav-list {
+	display: block;
+	background: $primaryColor;
+	z-index: 10000;
+	.js-enabled & {
+		@extend %easeInOut;
+		position: fixed;
+		top: 0;
+		left: 100%;
+		right:0;
+		&.-open {
+			left: 25%;
+		}
+		&.-no-animate {
+			@include noAnimate;
+		}
+	}
+	.nav-toggle {
+		position: absolute;
+		left:-1em;
+		top:0;
+		font-size:3em;		
+	}
+}

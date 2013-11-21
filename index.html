@@ -2,13 +2,35 @@
 layout: default
 title: Your New Jekyll Site
 ---
-
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a class="btn" href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-  <a class="btn -alt">Test</a>
+<div class="home">
+  <div class="looped-content">
+  	<h2>Posts</h2>
+	<ul class="posts">
+		{% for post in site.categories.blog %}
+	    	<li>
+	    		<a class="post-item" href="{{ post.url }}">
+		    		<img src="{{ post.thumbnail }}" width="50" height="50" class="post-thumb" />
+		    		<span class="post-title">{{post.title}}</span>
+		    		<time  class="icon -calendar" datetime="{{post.date}}">{{post.date | date_to_string}}</time>
+				</a>
+	    	</li>
+	    {% endfor %}
+	</ul>
+  </div>
+    <div class="looped-content">
+  	<h2>Work</h2>
+	<ul class="posts">
+		{% for post in site.categories.work %}
+	    	<li><span>{{ post.date | date_to_string }}</span> &raquo; <a class="btn" href="{{ post.url }}">{{ post.title }}</a></li>
+	    {% endfor %}
+	</ul>
+  </div>
+    <div class="looped-content">
+  	<h2>Blog Posts</h2>
+	<ul class="posts">
+		{% for post in site.posts %}
+	    	<li><span>{{ post.date | date_to_string }}</span> &raquo; <a class="btn" href="{{ post.url }}">{{ post.title }}</a></li>
+	    {% endfor %}
+	</ul>
+  </div>
 </div>

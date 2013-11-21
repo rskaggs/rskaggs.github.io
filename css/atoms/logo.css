@@ -1,0 +1,59 @@
+/*
+Syntax error: Undefined mixin 'showOnlyBefore'.
+        on line 2 of _sass/atoms/logo.scss, in `showOnlyBefore'
+        from line 2 of _sass/atoms/logo.scss
+
+1: .logo {
+2: 	@include showOnlyBefore;
+3: 	&:before {
+4: 		content: "{R:S}";
+5: 	}
+6: }
+
+Backtrace:
+_sass/atoms/logo.scss:2:in `showOnlyBefore'
+_sass/atoms/logo.scss:2
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/tree/root_node.rb:20:in `render'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/engine.rb:315:in `_render'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/engine.rb:262:in `render'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/lib/sass/plugin/compiler.rb:283:in `block in watch'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `call'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:198:in `report_changes'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/vendor/listen/lib/listen/adapter.rb:210:in `poll_changed_dirs'
+/Users/rskaggs/.rvm/gems/ruby-1.9.3-p448/gems/sass-3.2.12/vendor/listen/lib/listen/adapters/darwin.rb:38:in `block in start'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'showOnlyBefore'.\A         on line 2 of _sass/atoms/logo.scss, in `showOnlyBefore'\A         from line 2 of _sass/atoms/logo.scss\A \A 1: .logo {\A 2: 	@include showOnlyBefore;\A 3: 	&:before {\A 4: 		content: \"{R:S}\";\A 5: 	}\A 6: }"; }

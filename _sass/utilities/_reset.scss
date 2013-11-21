@@ -29,12 +29,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 html {
-	background: $lightColor;
+	background: $backgroundColor;
 }
 body {
 	line-height: 1;
 	font-family: $copyFont;
-	color: $darkColor;
+	color: $textColor;
 }
 ol, ul {
 	list-style: none;
@@ -50,4 +50,7 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+.body-wrap {
+	padding:.5em;
 }

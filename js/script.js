@@ -24,6 +24,6 @@ var $rs = {};
 	}
 	
 	document.getElementsByClassName('nav-toggle')[0].addEventListener("click", $rs.toggleNavigation, false);
-	document.getElementsByClassName('nav-toggle')[0].addEventListener("touchstart", $rs.toggleNavigation, false);
+	document.getElementsByClassName('nav-toggle')[0].addEventListener("touchend", $rs.toggleNavigation, false);
 	
 })();

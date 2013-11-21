@@ -1,0 +1,77 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.icon {
+
+	&:before {
+		font-family: 'icomoon';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+	
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+	&.-menu:before {
+		content: "\e600";
+	}
+	&.-link:before {
+		content: "\e602";
+	}
+	&.-mail:before {
+		content: "\e603";
+	}
+	&.-facebook:before {
+		content: "\e604";
+	}
+	&.-twitter:before {
+		content: "\e605";
+	}
+	&.-github:before {
+		content: "\e606";
+	}
+	&.-linkedin:before {
+		content: "\e607";
+	}
+	&.-file-pdf:before {
+		content: "\e608";
+	}
+	&.-file-word:before {
+		content: "\e609";
+	}
+	&.-file-excel:before {
+		content: "\e60a";
+	}
+	&.-file-zip:before {
+		content: "\e60b";
+	}
+	&.-file-powerpoint:before {
+		content: "\e60c";
+	}
+	&.-file-xml:before {
+		content: "\e60d";
+	}
+	&.-file-css:before {
+		content: "\e60e";
+	}
+	&.-calendar:before {
+		content: "\e601";
+	}
+	&.-spinner:before {
+		content: "\e60f";
+	}
+
+}
+

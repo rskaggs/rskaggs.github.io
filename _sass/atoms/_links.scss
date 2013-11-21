@@ -11,22 +11,47 @@ a {
 	}
 }
 .nav-list-link {
-	color: $lightColor;
+	color: $backgroundColor;
 	display: block;
 	padding:.5em;
+	text-decoration: none;
+	@include easeInOut(0.2s);
 	&:hover, &:active, &:focus {
-		background: lighten($primaryColor, 10%);
-		color: $lightColor;
+		padding-left:1em;
+		color: lighten($actionColor, 30%);
+		
 	}
 	&:visited {
-		color: $lightColor;
+		color: $backgroundColor;
+		&:hover, &:active, &:focus {
+			padding-left:1em;
+			color: lighten($actionColor, 30%);
+			
+		}
 	}
 }
 .nav-toggle {
 	background: $primaryColor;
-	width:1em;
-	height:1em;
-	line-height: 1em;
-	text-align: center;
-	color: $lightColor;
+	padding: 1em 0 0 1em;
+	height: 0;
+	width: 0;
+	overflow: hidden;
+	color: $backgroundColor;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 0 0 0 .1em;
+	border:1px solid $textColor;
+	border-right:none;
+    &:before {
+	    position: absolute;
+	    left:0;
+	    top:0;
+	    right:0;
+	    bottom: 0;
+	    font-size: .75em;
+	    text-align: center;
+	    line-height: 1.25em;
+	    display: block;
+	    color:#fff;
+    }
 }

@@ -1,15 +1,33 @@
+@mixin showOnlyBefore {
+    text-indent: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    &:before {
+	    position: absolute;
+	    left: -200%;
+    }
+}
+@mixin afterClear {
+	&:after {
+		content: "";
+		width:0;
+		height:0;
+		display: block;
+		clear:both;
+	}
+}
 @mixin useHeaderFont {
 	font-family: $headerFont;
 }
 @mixin useBodyFont {
 	font-family: $headerFont;
 }
-@mixin easeInOut {
-	-webkit-transition: all 0.8s ease-in-out;
-	-moz-transition: all 0.8s ease-in-out;
-	-ms-transition: all 0.8s ease-in-out;
-	-o-transition: all 0.8s ease-in-out;
-	transition: all 0.8s ease-in-out;
+@mixin easeInOut($speed:0.5s) {
+	-webkit-transition: all $speed ease-in-out;
+	-moz-transition: all $speed ease-in-out;
+	-ms-transition: all $speed ease-in-out;
+	-o-transition: all $speed ease-in-out;
+	transition: all $speed ease-in-out;
 }
 @mixin noAnimate {
   -webkit-transition: none;

@@ -2,7 +2,8 @@
 layout: post
 title:  "Hello World"
 date:   2013-11-13 16:48:00
-categories: testing cats
+categories: work
+thumbnail: http://placekitten.com/50/50
 ---
 # This is a heading 1
 ## This is a heading 2

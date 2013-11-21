@@ -1,0 +1,18 @@
+.post-item {
+	display: block;
+	text-decoration: none;
+	background: $actionColor;
+	padding:.5em;
+	margin: .5em 0;
+	border-radius: 5em;
+	color: $backgroundColor;
+	&:hover, &:focus, &:visited {
+		color: $backgroundColor;
+	}
+	
+	@include afterClear;
+	.post-thumb {
+		float:left;
+		margin-right:1em;
+	}
+}
